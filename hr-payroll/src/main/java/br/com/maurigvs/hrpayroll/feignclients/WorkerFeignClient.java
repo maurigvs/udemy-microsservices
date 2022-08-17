@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Component
-@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/workers")
-public interface WorkerFeignClients {
+@FeignClient(name = "hr-worker", url = "localhost:8100", path = "/workers")
+public interface WorkerFeignClient {
 
     @GetMapping(value = "/{id}")
     ResponseEntity<Worker> selectById(@PathVariable Long id);
