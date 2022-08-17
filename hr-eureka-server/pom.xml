@@ -12,7 +12,7 @@
     <artifactId>hr-eureka-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>hr-eureka-server</name>
-    <description>hr-eureka-server</description>
+    <description>Eureka Server</description>
     <properties>
         <java.version>11</java.version>
     </properties>
