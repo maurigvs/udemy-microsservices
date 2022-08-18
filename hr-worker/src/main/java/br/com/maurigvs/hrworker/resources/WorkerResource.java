@@ -37,6 +37,12 @@ public class WorkerResource {
     @GetMapping(value = "/{id}")
     public ResponseEntity<Worker> selectById(@PathVariable Long id){
 
+        try {
+            Thread.sleep(3000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         logger.info("PORT = " + env.getProperty("local.server.port"));
 
         // Implementação simplificada sem tratamento de exceções
